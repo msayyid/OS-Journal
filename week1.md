@@ -39,7 +39,6 @@ Both VMs use a NAT network (`10.0.2.0/24`) with:
 
 This setup provides a safe, isolated environment for multi-system networking and OS configuration without affecting the host or external networks.
 
-### **Screenshot Placeholder**
 
 
 ![Architecture Diagram](/assets/images/week_1/system-achitecture-diagram.png)
@@ -92,11 +91,15 @@ Debian is extremely stable but slower to receive updates, which may limit access
 * Lightweight enough to perform well inside VirtualBox
 * Reliable for development, CLI work, and remote administration
 
-### **Screenshot Placeholders**
 
 
-![Ubuntu VM Settings](/assets/images/week_1/ubuntu-workstation-settings.png)
-![Fedora VM Settings](/assets/images/week_1/fedora-server-settings.png)
+
+<p align="center">
+  <img src="/assets/images/week_1/ubuntu-workstation-settings.png" width="45%">
+  <img src="/assets/images/week_1/fedora-server-settings.png" width="45%">
+</p>
+<p align="center"><em>Ubuntu workstation settings (left) and Fedora server settings (right).</em></p>
+
 
 
 ---
@@ -127,8 +130,11 @@ This provides:
 ### **Screenshot Placeholders**
 
 
-![Ubuntu Network Config](/assets/images/week_1/ubuntu-network-configuration.png)
-![Fedora Network Config](/assets/images/week_1/fedora-network-configuration.png)
+<p align="center">
+  <img src="/assets/images/week_1/ubuntu-network-configuration.png" width="45%">
+  <img src="/assets/images/week_1/fedora-network-configuration.png" width="45%">
+</p>
+<p align="center"><em>Ubuntu network configuration (left) and Fedora network configuration (right).</em></p>
 
 
 ---
@@ -147,7 +153,6 @@ df -h
 ip addr
 ```
 
-### **Screenshot Placeholders**
 
 
 ![Ubuntu uname, lsb_release -a, free -h, df-h Output](/assets/images/week_1/ubuntu-commands-1.png)
@@ -167,8 +172,5 @@ free -h
 df -h
 ip addr
 ```
-
-### **Screenshot Placeholders**
-
 
 ![Fedora uname Output](/assets/images/week_1/fedora-commands-1.png)
