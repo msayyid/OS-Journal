@@ -127,7 +127,6 @@ This provides:
 | Subnet Mask  | `255.255.255.0`                  | `255.255.255.0`                 |
 | DNS          | Auto (VirtualBox NAT)            | Auto (VirtualBox NAT)           |
 
-### **Screenshot Placeholders**
 
 
 <p align="center">
