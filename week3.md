@@ -12,20 +12,13 @@ The goal was to build a structured and realistic workload environment covering C
 
 Below is the matrix of selected applications, categorized by workload type and justified based on relevance and characteristics.
 
-**CPU-Intensive – Stress-ng**
-Chosen because it is an industry-standard tool that can generate deterministic, high CPU load with configurable worker threads. Useful for stressing multi-core environments.
-
-**RAM-Intensive – Stress-ng (vm stressor)**
-The vm stressor allocates memory, performs memcpy operations, and creates high memory pressure. Ideal for testing memory bandwidth and swap behavior.
-
-**I/O-Intensive – Fio**
-A widely used tool for evaluating disk performance. Highly configurable, supports sequential and random read/write patterns, adjustable block sizes, and JSON output.
-
-**Network-Intensive – iPerf3**
-A standard tool for network throughput, latency, and jitter testing. Supports both TCP and UDP, and operates in a client-server model.
-
-**Server Application – Minecraft Server (Java Edition)**
-A lightweight real-world server workload that uses CPU, RAM, disk I/O, and network resources. Provides logs and predictable behavior, making it useful for multi-resource performance evaluation.
+| Workload Type      | Application                     | Justification                                                                      | Key Characteristics                                                      |
+| ------------------ | ------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| CPU-Intensive      | Stress-ng                       | Industry-standard tool allowing fine-grained CPU stress (threads, ops/sec).        | High CPU load, multi-threading, deterministic workload.                  |
+| RAM-Intensive      | Stress-ng (vm stressor)         | Enables stressing memory through allocation, memcpy, and random writes.            | High memory pressure, swap testing, memory bandwidth evaluation.         |
+| I/O-Intensive      | Fio                             | Most widely used tool for disk evaluation; supports many configurable workloads.   | Sequential/random reads/writes, block size tuning, detailed I/O metrics. |
+| Network-Intensive  | iPerf3                          | Standard tool for measuring throughput, latency, and jitter in client-server mode. | Measures TCP/UDP bandwidth, low overhead, controlled testing.            |
+| Server Application | Minecraft Server (Java Edition) | Lightweight but realistic server load involving CPU, RAM, I/O, and network usage.  | Real-world multi-resource workload; predictable behaviour; useful logs.  |
 
 ---
 
@@ -70,44 +63,15 @@ Steps:
 
 Below is an overview of the anticipated resource usage patterns for each application:
 
-**Stress-ng (CPU mode)**
+| Application           | CPU Usage                  | Memory Usage                    | Disk I/O            | Network Usage | Notes                                                               |
+| --------------------- | -------------------------- | ------------------------------- | ------------------- | ------------- | ------------------------------------------------------------------- |
+| Stress-ng (CPU mode)  | Very high (near 100%/core) | Low                             | Minimal             | None          | Fully controlled via number of workers.                             |
+| Stress-ng (RAM mode)  | Moderate                   | Very high (GB-level allocation) | Moderate (swap I/O) | None          | Tests memory pressure, bandwidth, and swap performance.             |
+| Fio (Disk I/O)        | Low–medium                 | Medium                          | Very high           | None          | Patterns depend on sequential or random R/W workloads.              |
+| iPerf3 (Network test) | Low                        | Low                             | None                | Very high     | Measures raw maximum network throughput.                            |
+| Minecraft Server      | Medium–high                | Medium–high (2–3 GB typical)    | Medium              | Medium        | Real-world combined workload: chunk loading, ticks, player traffic. |
 
-* CPU Usage: Extremely high (close to 100% per core)
-* Memory Usage: Low
-* Disk I/O: Minimal
-* Network: None
-* Notes: Scales with number of workers
 
-**Stress-ng (RAM mode)**
-
-* CPU Usage: Moderate
-* Memory Usage: Extremely high depending on allocation
-* Disk I/O: Moderate if swapping occurs
-* Network: None
-
-**Fio (Disk I/O)**
-
-* CPU Usage: Low–medium
-* Memory Usage: Medium
-* Disk I/O: Very high
-* Network: None
-* Notes: Behavior depends on read/write patterns
-
-**iPerf3 (Network testing)**
-
-* CPU Usage: Low
-* Memory Usage: Low
-* Disk I/O: None
-* Network: Very high throughput
-* Notes: Measures raw bandwidth
-
-**Minecraft Server**
-
-* CPU Usage: Medium–high
-* Memory Usage: Medium–high (2–3 GB normal)
-* Disk I/O: Medium during chunk generation
-* Network: Medium
-* Notes: Represents a realistic multi-resource server workload
 
 ---
 
