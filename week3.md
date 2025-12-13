@@ -121,3 +121,11 @@ A combination of live and logged monitoring tools will be used to capture perfor
 * Use iotop to measure chunk-loading disk I/O
 * Use iftop to monitor player-related traffic
 * Check server tick rate (TPS) through server logs
+
+---
+
+**Reflection**
+
+This week focused on selecting suitable applications to represent different system workloads and understanding how each one stresses specific system resources. Comparing CPU, memory, disk, network, and server-level workloads highlighted that performance testing requires more than a single tool or metric. Each application was chosen to isolate or combine resource usage in a controlled and meaningful way.
+
+Defining expected resource profiles helped clarify what behaviour should be considered normal versus abnormal during testing. Planning the monitoring strategy in advance also reinforced the importance of selecting the right tools for each workload. Overall, this week provided a structured foundation for conducting accurate and reproducible performance tests in the following phase.
