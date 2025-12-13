@@ -25,35 +25,20 @@ Ubuntu uses AppArmor as its Mandatory Access Control (MAC) system. The goal this
 **Installed AppArmor tools**
 Packages installed to manage and inspect AppArmor profiles.
 
-**Screenshot Placeholder:**
-(Insert screenshot of AppArmor installation completed in terminal)
-
-<p align="center">
-  <img src="/assets/images/week_5/apparmor-installed.png" width="70%">
-</p>
-
----
-
 **Checked AppArmor status using aa-status**
 This displays all profiles, including those in enforce and complain mode.
 
-**Screenshot Placeholder:**
-(Insert screenshot of aa-status output showing loaded/enforced profiles)
-
 <p align="center">
-  <img src="/assets/images/week_5/aa-status-output.png" width="70%">
+  <img src="/assets/images/week_5/aa-status-check.png" width="70%">
 </p>
 
 ---
 
 **Enforced an existing AppArmor profile**
-Since modern Ubuntu versions no longer include an sshd profile, an existing profile such as /usr/bin/man was enforced.
-
-**Screenshot Placeholder:**
-(Insert screenshot showing aa-enforce applied and profile in enforce mode)
+An existing profile such as /usr/bin/man was enforced.
 
 <p align="center">
-  <img src="/assets/images/week_5/aa-enforce-man.png" width="70%">
+  <img src="/assets/images/week_5/aa-enforce-profile.png" width="70%">
 </p>
 
 ---
@@ -61,11 +46,8 @@ Since modern Ubuntu versions no longer include an sshd profile, an existing prof
 **Viewed AppArmor log events**
 System logs were filtered to show AppArmor-related entries.
 
-**Screenshot Placeholder:**
-(Insert screenshot of journalctl output filtered by AppArmor)
-
 <p align="center">
-  <img src="/assets/images/week_5/apparmor-logs.png" width="70%">
+  <img src="/assets/images/week_5/aa-logs-access-control-eventws.png" width="70%">
 </p>
 
 ---
@@ -84,29 +66,22 @@ This activates periodic unattended upgrades.
 
 **Verified configuration** inside `/etc/apt/apt.conf.d/20auto-upgrades`.
 
-**Screenshot Placeholder:**
-(Insert screenshot of 20auto-upgrades file showing enabled settings)
 
 <p align="center">
-  <img src="/assets/images/week_5/auto-upgrades-config.png" width="70%">
+  <img src="/assets/images/week_5/auto-updates-and-verification.png" width="70%">
 </p>
 
 ---
 
 **Checked service status and logs**
 
-**Screenshot Placeholder:**
-(Insert screenshot of systemctl status unattended-upgrades)
-
 <p align="center">
-  <img src="/assets/images/week_5/unattended-upgrades-status.png" width="70%">
+  <img src="/assets/images/week_5/check-service-status-and-logs-1.png" width="70%">
 </p>
 
-**Screenshot Placeholder:**
-(Insert screenshot of unattended-upgrades.log output)
 
 <p align="center">
-  <img src="/assets/images/week_5/unattended-upgrades-log.png" width="70%">
+  <img src="/assets/images/week_5/check-service-status-and-logs-2.png" width="70%">
 </p>
 
 ---
@@ -135,18 +110,9 @@ Ensures protection is active across reboots.
 
 **Verified fail2ban operation**
 
-**Screenshot Placeholder:**
-(Insert screenshot of fail2ban-client status output)
 
 <p align="center">
-  <img src="/assets/images/week_5/fail2ban-status.png" width="70%">
-</p>
-
-**Screenshot Placeholder:**
-(Insert screenshot of fail2ban-client status sshd output)
-
-<p align="center">
-  <img src="/assets/images/week_5/fail2ban-ssh-status.png" width="70%">
+  <img src="/assets/images/week_5/verified-fail2ban-implementation.png" width="70%">
 </p>
 
 ---
@@ -164,15 +130,17 @@ It verifies all security configurations from Phases 4 and 5, including:
 
 The script contains line-by-line comments explaining each check.
 
+<p align="center">
+  <img src="/assets/images/week_5/security-baseline-script.png" width="70%">
+</p>
+
+---
 It was made executable and run remotely from Fedora using:
 
-ssh user@server "bash ~/security-baseline.sh"
-
-**Screenshot Placeholder:**
-(Insert screenshot showing security-baseline.sh executing over SSH)
+ssh mukhammadsaiid@192.168.56.101 "bash ~/security-baseline.sh"
 
 <p align="center">
-  <img src="/assets/images/week_5/security-baseline-script-run.png" width="70%">
+  <img src="/assets/images/week_5/security-baseline-script-executed-ssh.png" width="70%">
 </p>
 
 ---
@@ -190,15 +158,17 @@ This script connects to the Ubuntu server via SSH and retrieves:
 * Disk usage
 * Logged-in users
 
+<p align="center">
+  <img src="/assets/images/week_5/monitoring-script-content.png" width="70%">
+</p>
+
 The script is executed as:
 
-./monitor-server.sh user@server_ip
+./monitor-server.sh mukhammadsaiid@192.168.56.101
 
-**Screenshot Placeholder:**
-(Insert screenshot of monitor-server.sh output in Fedora terminal)
 
 <p align="center">
-  <img src="/assets/images/week_5/monitor-server-output.png" width="70%">
+  <img src="/assets/images/week_5/monitoring-output-ssh-on-fedora.png" width="70%">
 </p>
 
 ---
