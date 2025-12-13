@@ -172,3 +172,9 @@ The script is executed as:
 </p>
 
 ---
+
+**Reflection**
+
+This week built on earlier security configurations by introducing more advanced protection and monitoring mechanisms. Implementing AppArmor showed how mandatory access control can restrict application behaviour beyond traditional permissions, adding an extra layer of defence. Reviewing AppArmor status and logs helped clarify how access control events can be monitored and audited.
+
+Configuring automatic security updates and fail2ban highlighted the importance of maintaining security over time, not just during initial setup. Creating the security baseline script reinforced the value of automation in verifying system state consistently. Developing the remote monitoring script also improved my understanding of how system metrics can be collected securely over SSH. Overall, this week strengthened my ability to manage and monitor a Linux server in a more realistic, production-oriented manner.
