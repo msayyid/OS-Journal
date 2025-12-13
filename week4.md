@@ -137,3 +137,10 @@ These commands confirm:
   <img src="/assets/images/week_4/remote-admin-evidence.png" width="70%">
 </p>
 
+---
+
+**Reflection**
+
+This week focused on applying security controls in practice rather than just planning them. Configuring SSH key-based authentication and disabling password and root access highlighted how small configuration changes can significantly improve system security. Performing all actions remotely via SSH reinforced the importance of careful configuration, as mistakes could result in losing access to the server.
+
+Restricting SSH access to a single workstation using firewall rules demonstrated how network-level controls add an additional layer of protection beyond authentication. Creating a non-root administrative user also emphasised the principle of least privilege and reduced reliance on the root account. Overall, this week improved my confidence in securely managing a remote Linux server and showed how multiple security mechanisms work together to protect the system.
