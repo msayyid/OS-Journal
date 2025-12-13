@@ -173,3 +173,13 @@ ip addr
 ```
 
 ![Fedora uname Output](/assets/images/week_1/fedora-commands-1.png)
+
+---
+
+**Reflection**
+
+This week helped me understand the importance of planning before implementing any operating system configuration. Selecting the workstation and server distributions required balancing stability, usability, and long-term support, rather than simply choosing the newest software available. Comparing Ubuntu, Fedora, and Debian highlighted how update cycles and community support can significantly affect system maintenance over time.
+
+Designing the system architecture clarified how a dual-VM setup mirrors real-world server administration, where systems are managed remotely rather than locally. Configuring the NAT network and verifying connectivity reinforced my understanding of virtual networking and how isolated environments can still support secure communication between machines.
+
+Using command-line tools such as uname, free, and ip addr provided insight into how system resources and configurations can be inspected without relying on graphical interfaces. Overall, this week established a solid foundation for later security and performance tasks and emphasised the value of careful system planning in professional environments.
