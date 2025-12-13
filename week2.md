@@ -194,3 +194,10 @@ Goal: Reduce attack surface and defend against spoofing or DoS attempts.
 | Privilege Escalation    | Low-privilege user attempts to become root                   | Restricted sudo access, SELinux/AppArmor enforcement    |
 | Denial of Service (DoS) | System overwhelmed via traffic floods or resource exhaustion | Rate-limited SSH, firewall rules, continuous monitoring |
 
+---
+
+**Weekly Reflection**
+
+This week focused on planning security controls and defining how system performance would be tested later in the coursework. Creating the performance testing plan helped clarify the importance of collecting baseline measurements before applying load or stress, so results can be compared accurately. Planning remote monitoring through SSH also reinforced the need to balance system visibility with secure access.
+
+Developing the security configuration checklist showed how multiple controls such as SSH hardening, firewalls, access control, and automatic updates work together to reduce risk. Creating the threat model helped connect common security threats to practical mitigation techniques. Overall, this week provided a clear security and testing framework that supports the implementation tasks in the following weeks.
