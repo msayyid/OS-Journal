@@ -64,3 +64,7 @@ https://iperf.fr/, [Accessed: 12-Dec-2025].
 [6] Linux Foundation, “Linux Performance Tools,” 
 https://www.kernel.org/doc/html/latest/, [Accessed: 01-Dec-2025].
 
+
+## Use of AI Tools
+
+AI tools were used to support clarity of writing and structure. All commands, configurations, and analysis were executed and understood by the author.
