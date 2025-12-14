@@ -1,9 +1,3 @@
-```
-week1.md
-```
-
----
-
 # **Week 1 – System Planning and Distribution Selection**
 
 ## **Phase 1: Overview**
