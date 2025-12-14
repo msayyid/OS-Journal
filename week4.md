@@ -1,5 +1,7 @@
 # **WEEK 4 – Initial System Configuration and Security Implementation**
 
+[← Week 3](week3.md) | [Home](index.md) | [Next Week →](week5.md)
+
 ## **Phase 4 Overview**
 
 This week focused on deploying the server and implementing foundational security controls. All configurations on the Ubuntu server were performed strictly through SSH from the Fedora workstation, following the administrative constraint in the assessment brief.
@@ -144,3 +146,6 @@ These commands confirm:
 This week focused on applying security controls in practice rather than just planning them. Configuring SSH key-based authentication and disabling password and root access highlighted how small configuration changes can significantly improve system security. Performing all actions remotely via SSH reinforced the importance of careful configuration, as mistakes could result in losing access to the server.
 
 Restricting SSH access to a single workstation using firewall rules demonstrated how network-level controls add an additional layer of protection beyond authentication. Creating a non-root administrative user also emphasised the principle of least privilege and reduced reliance on the root account. Overall, this week improved my confidence in securely managing a remote Linux server and showed how multiple security mechanisms work together to protect the system.
+
+---
+[← Week 3](week3.md) | [Home](index.md) | [Next Week →](week5.md)
