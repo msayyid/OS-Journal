@@ -1,6 +1,7 @@
 # Operating Systems Coursework – Coursework (Weekly Journal)
 
 **Module:** (CMP-N202-0) Operating Systems  
+**Module Tutors:** Dr Shabih Fatima & Tanaya Bowade  
 **Programme:** BSc Computer Science  
 **Student ID:** NOR225978976  
 **University:** University of Roehampton  
