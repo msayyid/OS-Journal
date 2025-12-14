@@ -41,3 +41,26 @@ A dual-system architecture was used, consisting of a headless Linux server acces
 ## Notes
 
 All server administration tasks were performed via SSH in accordance with the coursework constraints. Screenshots and command outputs are provided throughout the journal to demonstrate command-line proficiency, system behaviour, and security implementation.
+
+
+## References
+
+[1] University of Roehampton, “CMPN202 Operating Systems – Module Materials,” 
+Moodle Virtual Learning Environment, 2024. [Online]. Available: [MODULE_URL](https://moodle.roehampton.ac.uk/course/view.php?id=21552). 
+[Accessed: 13-Dec-2025].
+
+[2] Canonical Ltd., “Ubuntu Server Documentation,” 
+https://ubuntu.com/server/docs, [Accessed: 01-Dec-2025].
+
+[3] Fedora Project, “Fedora System Administrator’s Guide,” 
+https://docs.fedoraproject.org/, [Accessed: 01-Dec-2025].
+
+[4] Apache Software Foundation, “Apache HTTP Server Documentation,” 
+https://httpd.apache.org/docs/, [Accessed: 01-Dec-2025].
+
+[5] ESnet, “iperf3 – A TCP, UDP, and SCTP Network Bandwidth Measurement Tool,” 
+https://iperf.fr/, [Accessed: 12-Dec-2025].
+
+[6] Linux Foundation, “Linux Performance Tools,” 
+https://www.kernel.org/doc/html/latest/, [Accessed: 01-Dec-2025].
+
