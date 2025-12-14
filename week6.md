@@ -1,5 +1,7 @@
 # **WEEK 6 – Performance Evaluation and Analysis**
 
+[← Week 5](week5.md) | [Home](index.md) | [Next Week →](week7.md)
+
 ## **Phase 6 Overview**
 
 This phase evaluates operating system performance under different workloads using a controlled client–server setup. An Ubuntu virtual machine hosts services and is monitored for resource usage, while a Fedora virtual machine generates application load and network traffic.
@@ -356,4 +358,7 @@ A key learning outcome was the importance of separating service-level performanc
 Implementing and testing performance optimisations reinforced the value of data-driven tuning. Enabling HTTP compression and configuring persistent connections resulted in measurable improvements in throughput and response time without increasing resource pressure. Comparing pre- and post-optimisation results demonstrated how relatively small configuration changes can significantly improve scalability and efficiency when validated through systematic measurement.
 
 Overall, this phase strengthened my ability to design performance experiments, analyse operating system behaviour under load, and justify optimisation decisions using quantitative evidence.
+
+---
+[← Week 5](week5.md) | [Home](index.md) | [Next Week →](week7.md)
 
