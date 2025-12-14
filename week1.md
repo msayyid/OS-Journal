@@ -1,5 +1,8 @@
 # **Week 1 – System Planning and Distribution Selection**
 
+[Home](index.md) | [Next Week →](week2.md)
+
+
 ## **Phase 1: Overview**
 
 This week focused on planning the operating system deployment and justifying technical decisions. The tasks involved selecting suitable Linux distributions, configuring VirtualBox networking, defining the workstation–server architecture, and documenting system specifications through CLI tools.
@@ -177,3 +180,7 @@ This week helped me understand the importance of planning before implementing an
 Designing the system architecture clarified how a dual-VM setup mirrors real-world server administration, where systems are managed remotely rather than locally. Configuring the NAT network and verifying connectivity reinforced my understanding of virtual networking and how isolated environments can still support secure communication between machines.
 
 Using command-line tools such as uname, free, and ip addr provided insight into how system resources and configurations can be inspected without relying on graphical interfaces. Overall, this week established a solid foundation for later security and performance tasks and emphasised the value of careful system planning in professional environments.
+
+
+---
+[Home](index.md) | [Next Week →](week2.md)
