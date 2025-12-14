@@ -157,19 +157,33 @@ A moderate HTTP workload was generated locally using ApacheBench. This test eval
 
 ---
 
-### **High Load**
+### **High Load Testing – Application Load and System Monitoring (Pre-Optimisation)**
 
-A higher-intensity workload was generated using increased concurrency. System activity was monitored concurrently.
+A high-intensity HTTP workload was generated locally on the Ubuntu server using ApacheBench to evaluate system behaviour under peak application load. At the same time, system activity was monitored to observe CPU scheduling, process activity, and overall responsiveness.
+
+**Command used (ApacheBench – high load):**
+
+```
+ab -n 2000 -c 50 http://127.0.0.1/
+```
 
 <p align="center">
   <img src="/assets/images/week_6/sc12_ab_high_pre.png" width="70%">
 </p>
 
+The ApacheBench output shows increased request throughput and concurrency, confirming that the Apache service was actively handling a high number of simultaneous requests prior to optimisation.
+
+**Command used (system monitoring during load):**
+
+```
+top -b -d 1
+```
+
 <p align="center">
   <img src="/assets/images/week_6/sc13_top_during_load_pre.png" width="70%">
 </p>
 
-Monitoring confirmed increased Apache worker activity while the system remained responsive.
+The `top` output confirms multiple active Apache worker processes, increased CPU utilisation compared to baseline, and stable memory usage. Despite the high workload, the system remained responsive, indicating no immediate CPU or memory saturation at this stage.
 
 ---
 
@@ -210,25 +224,36 @@ Persistent connections (KeepAlive) were enabled and tuned to reduce TCP connecti
 
 ---
 
-## **Post-Optimisation Load Testing**
+### **Post-Optimisation Moderate Load Testing**
 
-### **Moderate Load**
+After enabling HTTP compression and tuning Apache connection handling, the moderate workload test was repeated to evaluate the impact of the applied optimisations on application performance.
 
-ApacheBench testing was repeated after optimisation to evaluate performance improvements.
+**Command used (ApacheBench – moderate load):**
+
+```
+ab -n 1000 -c 20 http://127.0.0.1/
+```
 
 <p align="center">
   <img src="/assets/images/week_6/sc16_ab_moderate_post.png" width="70%">
 </p>
 
+The ApacheBench output shows an increase in requests per second and a reduction in average response time compared to pre-optimisation results, indicating improved efficiency in request handling.
+
 <p align="center">
   <img src="/assets/images/week_6/sc16_1_ab_moderate_post.png" width="70%">
 </p>
+
+The extended output confirms that all requests were completed successfully with no failed requests and stable response times, demonstrating that the optimised configuration performs reliably under moderate concurrent load.
+
 
 ---
 
 ### **High Load**
 
-High-load testing was repeated, with system monitoring enabled.
+High-load application testing was repeated after optimisation to assess Apache behaviour under peak concurrency. System monitoring was enabled to observe resource usage during the test.
+
+**ApacheBench results (high load, post-optimisation):**
 
 <p align="center">
   <img src="/assets/images/week_6/sc17_ab_high_post.png" width="70%">
@@ -238,9 +263,12 @@ High-load testing was repeated, with system monitoring enabled.
   <img src="/assets/images/week_6/sc17_1_ab_high_post.png" width="70%">
 </p>
 
+**System monitoring during high load (post-optimisation):**
+
 <p align="center">
   <img src="/assets/images/week_6/sc18_top_during_load_post.png" width="70%">
 </p>
+
 
 ---
 
