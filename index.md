@@ -1,4 +1,4 @@
-# Operating Systems Coursework – Coursework (Weekly Journal)
+# Operating Systems Coursework – Weekly Journal
 
 **Module:** (CMP-N202-0) Operating Systems  
 **Module Tutors:** Dr Shabih Fatima & Tanaya Bowade  
