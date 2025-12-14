@@ -1,5 +1,7 @@
 # **Week 2 – Security Planning and Testing Methodology**
 
+[← Week 1](week1.md) | [Home](index.md) | [Next Week →](week3.md)
+
 ## **Phase 2: Overview**
 
 This week focused on designing a security baseline for both virtual machines and creating a structured performance testing methodology. The work included a formal performance testing plan, a complete security configuration checklist, and a threat model that identifies major risks with corresponding mitigation strategies.
@@ -201,3 +203,6 @@ Goal: Reduce attack surface and defend against spoofing or DoS attempts.
 This week focused on planning security controls and defining how system performance would be tested later in the coursework. Creating the performance testing plan helped clarify the importance of collecting baseline measurements before applying load or stress, so results can be compared accurately. Planning remote monitoring through SSH also reinforced the need to balance system visibility with secure access.
 
 Developing the security configuration checklist showed how multiple controls such as SSH hardening, firewalls, access control, and automatic updates work together to reduce risk. Creating the threat model helped connect common security threats to practical mitigation techniques. Overall, this week provided a clear security and testing framework that supports the implementation tasks in the following weeks.
+
+---
+[← Week 1](week1.md) | [Home](index.md) | [Next Week →](week3.md)
