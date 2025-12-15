@@ -136,7 +136,7 @@ These commands confirm:
 * Administrative privileges work correctly through sudo
 
 <p align="center">
-  <img src="/assets/images/week_4/remote-admin-evidence.png" width="70%">
+  <img src="assets/images/week_4/remote-admin-evidence.png" width="70%">
 </p>
 
 ---
