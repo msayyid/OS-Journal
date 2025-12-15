@@ -31,7 +31,7 @@ Packages installed to manage and inspect AppArmor profiles.
 This displays all profiles, including those in enforce and complain mode.
 
 <p align="center">
-  <img src="/assets/images/week_5/aa-status-check.png" width="70%">
+  <img src="assets/images/week_5/aa-status-check.png" width="70%">
 </p>
 
 ---
@@ -40,7 +40,7 @@ This displays all profiles, including those in enforce and complain mode.
 An existing profile such as /usr/bin/man was enforced.
 
 <p align="center">
-  <img src="/assets/images/week_5/aa-enforce-profile.png" width="70%">
+  <img src="assets/images/week_5/aa-enforce-profile.png" width="70%">
 </p>
 
 ---
@@ -49,7 +49,7 @@ An existing profile such as /usr/bin/man was enforced.
 System logs were filtered to show AppArmor-related entries.
 
 <p align="center">
-  <img src="/assets/images/week_5/aa-logs-access-control-eventws.png" width="70%">
+  <img src="assets/images/week_5/aa-logs-access-control-eventws.png" width="70%">
 </p>
 
 ---
@@ -70,7 +70,7 @@ This activates periodic unattended upgrades.
 
 
 <p align="center">
-  <img src="/assets/images/week_5/auto-updates-and-verification.png" width="70%">
+  <img src="assets/images/week_5/auto-updates-and-verification.png" width="70%">
 </p>
 
 ---
@@ -78,12 +78,12 @@ This activates periodic unattended upgrades.
 **Checked service status and logs**
 
 <p align="center">
-  <img src="/assets/images/week_5/check-service-status-and-logs-1.png" width="70%">
+  <img src="assets/images/week_5/check-service-status-and-logs-1.png" width="70%">
 </p>
 
 
 <p align="center">
-  <img src="/assets/images/week_5/check-service-status-and-logs-2.png" width="70%">
+  <img src="assets/images/week_5/check-service-status-and-logs-2.png" width="70%">
 </p>
 
 ---
@@ -114,7 +114,7 @@ Ensures protection is active across reboots.
 
 
 <p align="center">
-  <img src="/assets/images/week_5/verified-fail2ban-implementation.png" width="70%">
+  <img src="assets/images/week_5/verified-fail2ban-implementation.png" width="70%">
 </p>
 
 ---
@@ -133,7 +133,7 @@ It verifies all security configurations from Phases 4 and 5, including:
 The script contains line-by-line comments explaining each check.
 
 <p align="center">
-  <img src="/assets/images/week_5/security-baseline-script.png" width="70%">
+  <img src="assets/images/week_5/security-baseline-script.png" width="70%">
 </p>
 
 ---
@@ -142,7 +142,7 @@ It was made executable and run remotely from Fedora using:
 ssh mukhammadsaiid@192.168.56.101 "bash ~/security-baseline.sh"
 
 <p align="center">
-  <img src="/assets/images/week_5/security-baseline-script-executed-ssh.png" width="70%">
+  <img src="assets/images/week_5/security-baseline-script-executed-ssh.png" width="70%">
 </p>
 
 ---
@@ -161,7 +161,7 @@ This script connects to the Ubuntu server via SSH and retrieves:
 * Logged-in users
 
 <p align="center">
-  <img src="/assets/images/week_5/monitoring-script-content.png" width="70%">
+  <img src="assets/images/week_5/monitoring-script-content.png" width="70%">
 </p>
 
 The script is executed as:
@@ -170,7 +170,7 @@ The script is executed as:
 
 
 <p align="center">
-  <img src="/assets/images/week_5/monitoring-output-ssh-on-fedora.png" width="70%">
+  <img src="assets/images/week_5/monitoring-output-ssh-on-fedora.png" width="70%">
 </p>
 
 ---
