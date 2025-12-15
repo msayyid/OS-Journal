@@ -20,7 +20,7 @@ The security audit was conducted on an Ubuntu virtual machine configured as a se
 * `ip a`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc1_system_baseline_information.png" width="70%">
+  <img src="assets/images/week_7/sc1_system_baseline_information.png" width="70%">
 </p>
 
 ---
@@ -36,7 +36,7 @@ An initial security audit was performed using Lynis to assess the system’s sec
 The initial hardening index reported by Lynis was **61**, highlighting several areas for improvement related to system hardening and security configuration.
 
 <p align="center">
-  <img src="/assets/images/week_7/sc2_lynis_baseline_score.png" width="70%">
+  <img src="assets/images/week_7/sc2_lynis_baseline_score.png" width="70%">
 </p>
 
 ---
@@ -53,7 +53,7 @@ The Uncomplicated Firewall (UFW) was enabled to restrict unauthorized network ac
 * `sudo ufw status verbose`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc3_ufw_enabled_status.png" width="70%">
+  <img src="assets/images/week_7/sc3_ufw_enabled_status.png" width="70%">
 </p>
 
 ---
@@ -68,7 +68,7 @@ Kernel network parameters were hardened to improve protection against IP spoofin
 * `sudo sysctl -w net.ipv4.tcp_syncookies=1`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc4_kernel_network_hardening.png" width="70%">
+  <img src="assets/images/week_7/sc4_kernel_network_hardening.png" width="70%">
 </p>
 
 ---
@@ -82,7 +82,7 @@ After applying the security improvements, the Lynis audit was re-run to reassess
 * `sudo lynis audit system`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc5_lynis_after_remediation.png" width="70%">
+  <img src="assets/images/week_7/sc5_lynis_after_remediation.png" width="70%">
 </p>
 
 ---
@@ -96,7 +96,7 @@ Network security testing was conducted using nmap from a Fedora virtual machine 
 * `sudo nmap -sS -sV 192.168.56.101`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc6_nmap_network_scan.png" width="70%">
+  <img src="assets/images/week_7/sc6_nmap_network_scan.png" width="70%">
 </p>
 
 ---
@@ -110,7 +110,7 @@ The SSH configuration was reviewed to ensure secure remote access practices were
 * `sudo sshd -T | grep -E "permitrootlogin|passwordauthentication"`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc7_ssh_security_verification.png" width="70%">
+  <img src="assets/images/week_7/sc7_ssh_security_verification.png" width="70%">
 </p>
 
 ---
@@ -124,7 +124,7 @@ Running services were reviewed to identify active components and justify their n
 * `systemctl list-units --type=service --state=running`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc8_running_services_list.png" width="70%">
+  <img src="assets/images/week_7/sc8_running_services_list.png" width="70%">
 </p>
 
 ### **Selected Service Justification**
@@ -158,7 +158,7 @@ User access controls were reviewed to ensure compliance with the principle of le
 * `groups`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc9_user_group_membership.png" width="70%">
+  <img src="assets/images/week_7/sc9_user_group_membership.png" width="70%">
 </p>
 
 Sensitive file permissions were also verified to ensure credential data protection. The `/etc/shadow` file was restricted to root and privileged groups, preventing unauthorized access to password hashes.
@@ -168,7 +168,7 @@ Sensitive file permissions were also verified to ensure credential data protecti
 * `ls -l /etc/shadow`
 
 <p align="center">
-  <img src="/assets/images/week_7/sc10_shadow_file_permissions.png" width="70%">
+  <img src="assets/images/week_7/sc10_shadow_file_permissions.png" width="70%">
 </p>
 
 ---
