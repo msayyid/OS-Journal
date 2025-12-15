@@ -32,7 +32,7 @@ A modern Ed25519 key pair was generated on the Fedora workstation using the ssh-
 The key was saved in the ~/.ssh/id_ed25519 location with an optional passphrase for additional security.
 
 <p align="center">
-  <img src="/assets/images/week_4/key-generation-fedora.png" width="70%">
+  <img src="assets/images/week_4/key-generation-fedora.png" width="70%">
 </p>
 
 ---
