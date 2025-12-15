@@ -43,7 +43,7 @@ The public key was copied to the Ubuntu server using the ssh-copy-id tool.
 This appended the key into the ~/.ssh/authorized_keys file on the Ubuntu system, granting key-based login permissions.
 
 <p align="center">
-  <img src="/assets/images/week_4/key-added-confirmation.png" width="70%">
+  <img src="assets/images/week_4/key-added-confirmation.png" width="70%">
 </p>
 
 
@@ -55,7 +55,7 @@ A test SSH login was performed from Fedora to Ubuntu.
 The connection succeeded without asking for a password, confirming that key-based authentication was working correctly.
 
 <p align="center">
-  <img src="/assets/images/week_4/successful-ssh-login-into-ubuntu.png" width="70%">
+  <img src="assets/images/week_4/successful-ssh-login-into-ubuntu.png" width="70%">
 </p>
 
 
@@ -75,12 +75,12 @@ To document the modifications, the relevant lines were extracted using grep to s
 
 <p><strong>Before: Default SSH Configuration</strong></p>
 <p align="center">
-  <img src="/assets/images/week_4/default-ssh-config-before.png" width="70%">
+  <img src="assets/images/week_4/default-ssh-config-before.png" width="70%">
 </p>
 
 <p><strong>After: Hardened SSH Configuration</strong></p>
 <p align="center">
-  <img src="/assets/images/week_4/hardened-ssh-config-after.png" width="70%">
+  <img src="assets/images/week_4/hardened-ssh-config-after.png" width="70%">
 </p>
 
 ---
@@ -90,7 +90,7 @@ To document the modifications, the relevant lines were extracted using grep to s
 To ensure only the workstation could access the server, UFW on the Ubuntu server was configured to allow SSH exclusively from the Fedora workstation’s IP (192.168.56.102).
 All commands were executed through SSH from Fedora.
 <p align="center">
-  <img src="/assets/images/week_4/commands-executed-via-ssh.png" width="70%">
+  <img src="assets/images/week_4/commands-executed-via-ssh.png" width="70%">
 </p>
 
 Final firewall ruleset confirmed:
@@ -100,7 +100,7 @@ Final firewall ruleset confirmed:
 * UFW enabled and active
 
 <p align="center">
-  <img src="/assets/images/week_4/ssh-access-restricted-confirmation.png" width="70%">
+  <img src="assets/images/week_4/ssh-access-restricted-confirmation.png" width="70%">
 </p>
 
 ---
@@ -113,7 +113,7 @@ This user was added to the sudo group, allowing privilege-escalated commands whe
 Verification using getent showed that “adminuser” appeared correctly under the sudo group.
 
 <p align="center">
-  <img src="/assets/images/week_4/adminuser-listed-in-the-group.png" width="70%">
+  <img src="assets/images/week_4/adminuser-listed-in-the-group.png" width="70%">
 </p>
 
 
