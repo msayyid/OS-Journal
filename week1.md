@@ -38,7 +38,7 @@ This setup provides a safe, isolated environment for multi-system networking and
 
 
 
-![Architecture Diagram](/assets/images/week_1/system-achitecture-diagram.png)
+![Architecture Diagram](assets/images/week_1/system-achitecture-diagram.png)
 
 ---
 
@@ -92,8 +92,8 @@ Debian is extremely stable but slower to receive updates, which may limit access
 
 
 <p align="center">
-  <img src="/assets/images/week_1/ubuntu-workstation-settings.png" width="45%">
-  <img src="/assets/images/week_1/fedora-server-settings.png" width="45%">
+  <img src="assets/images/week_1/ubuntu-workstation-settings.png" width="45%">
+  <img src="assets/images/week_1/fedora-server-settings.png" width="45%">
 </p>
 <p align="center"><em>Ubuntu workstation settings (left) and Fedora server settings (right).</em></p>
 
@@ -127,8 +127,8 @@ This provides:
 
 
 <p align="center">
-  <img src="/assets/images/week_1/ubuntu-network-configuration.png" width="45%">
-  <img src="/assets/images/week_1/fedora-network-configuration.png" width="45%">
+  <img src="assets/images/week_1/ubuntu-network-configuration.png" width="45%">
+  <img src="assets/images/week_1/fedora-network-configuration.png" width="45%">
 </p>
 <p align="center"><em>Ubuntu network configuration (left) and Fedora network configuration (right).</em></p>
 
@@ -151,7 +151,7 @@ ip addr
 
 
 
-![Ubuntu uname, lsb_release -a, free -h, df-h Output](/assets/images/week_1/ubuntu-commands-1.png)
+![Ubuntu uname, lsb_release -a, free -h, df-h Output](assets/images/week_1/ubuntu-commands-1.png)
 
 
 
@@ -169,7 +169,7 @@ df -h
 ip addr
 ```
 
-![Fedora uname Output](/assets/images/week_1/fedora-commands-1.png)
+![Fedora uname Output](assets/images/week_1/fedora-commands-1.png)
 
 ---
 
