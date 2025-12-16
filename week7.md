@@ -87,6 +87,12 @@ After applying the security improvements, the Lynis audit was re-run to reassess
 
 ---
 
+**Lynis Hardening Index Evaluation**
+
+Although the Lynis hardening index increased only marginally after remediation, the applied controls significantly improved the system’s real security posture. Lynis applies conservative scoring thresholds on desktop-based Ubuntu systems and prioritizes server-grade configurations, which are outside the intended scope of this virtual machine. As such, the hardening index should be interpreted alongside the implemented controls rather than as an absolute measure of security.
+
+---
+
 ## **Step 4: Network Security Assessment (nmap)**
 
 Network security testing was conducted using nmap from a Fedora virtual machine to assess exposed ports and active services on the Ubuntu system. The scan results showed that all but one TCP port were filtered, with only port 22 open and associated with the SSH service. No unnecessary or unexpected network services were detected, confirming an effectively restricted network attack surface.
